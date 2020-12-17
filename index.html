@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bungee Jumper Calculator</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+		<div class="calculator">
+			<label>Mass</label>
+			<input type="text" placeholder="Mass (kg)"><br>
+			<label>Rope/Bungee Length</label>
+			<input type="text" placeholder="Rope/Bungee Length (m)"><br>
+			<label>Spring Constant</label>
+			<input type="text" placeholder="Spring Constant (N/m)"><br>
+			<label>Gravity</label>
+			<input type="text" placeholder="Gravity (m/s^2)"><br>
+
+			<button id="submit" onclick="calculate()">Calculate</button>
+			<button id="reset" onclick="reset()">Reset</button>
+
+			<p id="results"></p>  
+		</div>
+
+        <script src="bungeeCalculator.js"></script>
+    </body>
+</html>
